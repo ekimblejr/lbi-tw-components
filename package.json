@@ -1,0 +1,37 @@
+{
+  "name": "lbi-tw-components",
+  "version": "1.0.0",
+  "description": "A TailwindCss component library for React using Typescript",
+  "main": "index.tsx",
+  "repository": "https://github.com/ekimblejr/lbi-tw-components",
+  "author": "Earl Kimble Jr.",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-webpack4": "^6.5.16",
+    "@storybook/manager-webpack4": "^6.5.16",
+    "@storybook/react": "^6.5.16",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/react": "^18.0.29",
+    "@types/react-dom": "^18.0.11",
+    "babel-loader": "^8.3.0",
+    "eslint": "^8.36.0",
+    "prettier": "^2.8.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {},
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "resolutions": {
+    "@storybook/react-docgen-typescript-plugin": "1.0.6--canary.9.cd77847.0"
+  }
+}
