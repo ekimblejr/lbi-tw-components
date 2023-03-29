@@ -1,11 +1,23 @@
 import React from 'react';
 
 export interface ButtonProps {
-  text: string;
+  primary?: boolean;
+  label: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ text }) => {
-  return <button>{text}</button>;
+const Button: React.FC<ButtonProps> = ({ primary, label }) => {
+  const style = primary
+    ? 'bg-slate-500 hover:bg-slate-700 text-white'
+    : 'bg-slate-50 hover:bg-slate-100 text-black';
+  return (
+    <button
+      className={['cursor-pointer font-bold py-2 px-4 rounded', style].join(
+        ' ',
+      )}
+    >
+      {label}
+    </button>
+  );
 };
 
 export default Button;
